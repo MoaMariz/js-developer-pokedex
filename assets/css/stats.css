@@ -1,0 +1,405 @@
+*
+{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    list-style: none;
+    margin: 0;
+}
+body 
+{
+    background-color: #f6f8fc;
+}
+section
+{
+    justify-content: center;
+    background-image: url(/js-developer-pokedex/assets/images/poke-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    min-width: 360px;
+    max-height: 90%;
+    align-items: center;
+    height: 90vh;
+    width: 80%;
+    border-radius: 40px;
+}
+i
+{
+    font-size: 2rem;
+    cursor: pointer;
+}
+i #heart:hover
+{
+    color: #bf3029;
+}
+.row
+{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #f1f1f1;
+}
+.icons
+{
+    margin-top: 50px;
+}
+.row h1
+{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    margin-bottom: .25rem;
+    margin-top: .75rem;
+}
+.row h3
+{
+    font-size: 2rem;
+}
+.types
+{
+    padding: 0;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.type {
+    color: #f1f1f1;
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    filter: brightness(1.1);
+    text-align: center;
+    width: 100px;
+}
+.img-container img {
+    max-width: 100%;
+    height: 260px;
+    position: relative;
+    top: 30px;
+}
+.card
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 55%;
+    text-align: center;
+    border-radius: 40px;
+    align-items: top;
+}
+.card h3,
+.stat_name
+{
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+}
+.stat_name
+{
+    text-transform: capitalize;
+}
+.card h2
+{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.about,
+.stats
+{
+    line-height: 2.3rem;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 40px;
+}
+.stats
+{
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.stat_value,
+.card h3 span,
+.abilities,
+.list_stats
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.abilities
+{
+    margin-top: 50px;
+}
+.ability
+{
+    text-transform: capitalize;
+}
+.normal-b
+{
+    background: rgb(119,200,80);
+    background: linear-gradient(0deg, transparent 15%, rgba(119,200,80,1) 100%);
+    background-color: #a6a877;
+}
+.grass-b
+{
+    background: rgb(119,200,80);
+    background: linear-gradient(0deg, transparent 15%, rgba(119,200,80,1) 100%);
+}
+.fire-b
+{
+    background: rgb(238,127,48);
+    background: linear-gradient(0deg, transparent 15%, rgba(238,127,48,1) 100%);
+}
+.water-b
+{
+    background: rgb(103,143,238);
+    background: linear-gradient(0deg, transparent 15%, rgba(103,143,238,1) 100%);
+}
+.electric-b
+{
+    background: rgb(247,207,46);
+    background: linear-gradient(0deg, transparent 15%, rgba(247,207,46,1) 100%);
+}
+.ice-b
+{
+    background: rgb(152,213,215);
+    background: linear-gradient(0deg, transparent 15%, rgba(152,213,215,1) 100%);
+}
+.ground-b
+{
+    background: rgb(223,191,105);
+    background: linear-gradient(0deg, transparent 15%, rgba(223,191,105,1) 100%);
+}
+.flying-b
+{
+    background: rgb(169,143,240);
+    background: linear-gradient(0deg, transparent 15%, rgba(169,143,240,1) 100%);
+}
+.poison-b
+{
+    background: rgb(160,64,160);
+    background: linear-gradient(0deg, transparent 15%, rgba(160,64,160,1) 100%);
+}
+.fighting-b
+{
+    background: rgb(191,48,41);
+    background: linear-gradient(0deg, transparent 15%, rgba(191,48,41,1) 100%);
+}
+.psychic-b
+{
+    background: rgb(246,86,135);
+    background: linear-gradient(0deg, transparent 15%, rgba(246,86,135,1) 100%);
+}
+.dark-b
+{
+    background: rgb(114,88,71);
+    background: linear-gradient(0deg, transparent 15%, rgba(114,88,71,1) 100%);
+}
+.rock-b
+{
+    background: rgb(184,161,55);
+    background: linear-gradient(0deg, transparent 15%, rgba(184,161,55,1) 100%);
+}
+.bug-b
+{
+    background: rgb(168,183,32);
+    background: linear-gradient(0deg, transparent 15%, rgba(168,183,32,1) 100%);
+}
+.ghost-b
+{
+    background: rgb(110,88,150);
+    background: linear-gradient(0deg, transparent 15%, rgba(110,88,150,1) 100%);
+}
+.steel-b
+{
+    background: rgb(185,183,207);
+    background: linear-gradient(0deg, transparent 15%, rgba(185,183,207,1) 100%);
+}
+.dragon-b
+{
+    background: rgb(111,56,246);
+    background: linear-gradient(0deg, transparent 15%, rgba(111,56,246,1) 100%);
+}
+.fairy-b
+{
+    background: rgb(249,174,199);
+    background: linear-gradient(0deg, transparent 15%, rgba(249,174,199,1) 100%);
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
+
+@media screen and (min-width: 500px){
+    .about,
+    .stats
+    {   
+        padding-left: 50px;
+        margin-top: 510px
+    }
+}
+@media screen and (min-width: 992px) 
+{
+    *{
+        font-size: 12px;
+    }
+    .container {
+        max-height: 100%;
+        overflow: hidden;
+    }
+    .row{
+        padding: 0.5rem 2rem;
+    }
+    .card
+    {
+        height: 65%;
+
+    }
+}
+@media screen and (min-width: 1200px){
+    .row
+    {
+        margin-top: 10px;
+    }
+    .card
+    {
+        height: 60%;
+    }
+    .container
+    {
+        max-height: 95%;
+        height: 200vh;
+    }
+    .img-container img {
+        height: 200px;
+    }
+    .card h3,
+    .stat_name
+    {
+        font-size: 1.2rem;
+    }
+    .card h2
+    {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .about,
+    .stats
+    {   
+        padding-left: 50px;
+        margin-top: 20px
+    }
+    .stats
+    {
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    .abilities
+    {
+        margin-top: 20px;
+    }
+}
+@media screen and (min-height: 800px){
+    .about,
+    .stats
+    {
+        margin-top: 20px;
+    }
+    .abilities
+    {
+        margin-top: 10px;
+    }
+}
+@media screen and (min-height: 900px){
+    .about,
+    .stats
+    {
+        margin-top: 40px;
+    }
+    .abilities
+    {
+        margin-top: 50px;
+    }   
+}
